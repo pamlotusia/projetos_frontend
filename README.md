@@ -9,8 +9,8 @@
 
 ### Telas
 
-- [x] Grid de Preços
-- [x] Seção com quatro cards de features
+- [x]  <a href="https://github.com/pamlotusia/projetos_frontend/tree/master/grid-preco" target="_blank">Grid de Preços</a>
+- [x] <a href="https://github.com/pamlotusia/projetos_frontend/tree/master/grid-cruz" target="_blank">Seção com quatro cards de features</a>
 - [ ] Landing Page com área de introdução
 - [ ] Tela de cadastro de Email
 - [ ] Tela de captura de Lead
