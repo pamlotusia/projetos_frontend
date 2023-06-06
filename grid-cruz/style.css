@@ -1,0 +1,78 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #fcf9fc;
+}
+
+.container-grid{
+  display: flex;
+  justify-content: center;
+  align-items: center; /*teste*/
+  height: 100vh; /*teste*/
+}
+
+.row{
+  display: grid; /* estava com dificuldade em manter as imagens dentro da div card, fazer a div 'two-cards' um display grid concertou isso, agora as imagens respeitam o bloco ---- usei no layout anterior e a regra segue a mesma, realmente funciona :) */
+}
+
+.card{
+  margin: 1em;
+
+  background-color: rgb(252, 252, 252);
+  box-shadow: 1px 5px 10px #c3cad2;
+
+  padding: 2em;
+  border-radius: 5px;
+
+  min-height: 12em;
+  max-width: 320px;
+}
+
+.center > *{
+  margin-bottom: 2em;
+}
+
+.card p{
+  margin: 10px 0 50px;
+  color: #747576;
+  font-size: 15px;
+
+}
+
+#red-card{
+  border-top: #df1313 4px solid;
+}
+
+#blue-card{
+  border-top: #4383bf 4px solid;
+}
+
+#green-card{
+  border-top: #64e1dc 4px solid;
+}
+
+#yellow-card{
+  border-top: #e9a945 4px solid;
+}
+
+.card p::first-letter, h1::first-letter{
+  text-transform: capitalize;
+}
+
+.card img{
+float: right;
+font-size: 46px;
+}
+
+h1{
+  color: #353743;
+}
+
+@media only screen and (max-width: 700px){
+  .container-grid{
+  display: grid;
+  }
+}

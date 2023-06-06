@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seção com quatro cards de features</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ideia: usar position relative para alinhar os cards de forma que tenha um container exterior que tenha 3 colunas, dentro das colunas 1 e 3 tenham position absolute e o card colorido tenha position relative, a coluna 2 tem 2 cards, de forma que ela pode ter um display row ou algo assim. O importe ~sao esses cards ficarem em cruz. 
+  FUNCIONOU !!!!-->
+<section class="container-grid">
+  <div class="row">
+    <div class="card"id='green-card'>
+      <h1>Supervisor</h1>
+      <p>monitors activity to identify project roadblocks</p>
+      <img src="images/icon-supervisor.svg" alt="">
+    </div>
+  </div>
+ 
+  <div class="row center">
+    <div class="card" id='red-card'>
+      <h1>Team Builder</h1>
+      <p>scans our talent network to create the optimal team for your project </p>
+      <img src="images/icon-team-builder.svg" alt="">
+    </div>
+
+    <div class="card" id='yellow-card'>
+      <h1>Karma</h1>
+      <p>regularly evaluates our talent to ensure quality </p>
+      <img src="images/icon-karma.svg" alt="">
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="card" id='blue-card'>
+      <h1>calculator</h1>
+      <p>uses data from past projects to provide better delivery estimates</p>
+      <img src="images/icon-calculator.svg" alt="">
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
