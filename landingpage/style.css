@@ -7,32 +7,34 @@
 :root {
   --main-color: hsl(257, 40%, 49%);
   --hover-color: hsl(300, 69%, 71%);
+  --hover-icons: hsl(314.72deg 85.03% 63.33%);
   --text-color: hsl(0deg 0% 99.8%);
 }
 
 body{
   height: 100vh;
+  width: 100vw;
   background-color: var(--main-color);
   background-image: url(./images/bg-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 header img{
-  margin: 40px 0 0 80px;
-  width: 200px;
-  height: ;
+  margin: 40px 0 0 100px;
+  width: 12.5em;
  }
 
 .main-container{
   display: flex;
-  margin: 70px 50px;
+  margin: 50px 70px 0 70px;
   justify-content: center;
 }
 
 .main-container div{
-  width: 600px; 
+  width: 37.5em; 
   margin: 0 30px;
 }
 
@@ -49,7 +51,7 @@ header img{
 }
 
 .title{
-  width: 400px;
+  width: 80%;
   margin-top: 1em;
   font-family: 'Poppins';
   font-weight: bold;
@@ -59,15 +61,17 @@ header img{
 }
 
 .text {
-  width: 520px;
+  width: 88%;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   color: var(--text-color);
   margin: 1.5em 0;
 }
 
-.button{
-  padding: 10px 55px;
+.button-sign-up{
+  width: 35%;
+  height: 8%;
+  padding: 10px 50px;
   border: 1px solid var(--main-color);
   border-radius: 50px;
   box-shadow: 0px 0px 10px 0px hsl(257, 43%, 21%);
@@ -75,19 +79,131 @@ header img{
   font-size: 18px;
   color: var(--main-color);
   background-color: var(--text-color);
-
+  transition: all .2s linear;
 }
 
-.social-media{
+.button-sign-up:hover{
+  background-color: var(--hover-color);
+  color: var(--text-color);  
+}
+
+footer{
+  width: 100vw;
+}
+.social-media {
   margin: 0px 80px 80px 0;
   float: right;
+  display: flex;
+  justify-content: center;
 }
 
-.social-media i{
-  margin: 6px;
-  font-size: 16px;
-  border: 1px solid var(--text-color);
-  border-radius: 50%;
-  padding: 8px;
+.social-media i {
+  margin: 10px;
+  width: 2em; /* Defina o tamanho do botão */
+  height: 2em; /* Defina o tamanho do botão */
+  border-radius: 50%; /* Torna o botão redondo */
+  border: 1px solid var(--text-color); /* Define uma borda */
   color: var(--text-color);
+  transition: all .1s linear;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media i:hover{
+  border: 1px solid var(--hover-icons);
+  color:var(--hover-icons);
+}
+
+.fa-brands {
+  font-size: 24px; /* Defina o tamanho do ícone */
+}
+
+
+@media only screen and (max-width: 700px){
+  body{
+    background-image: url(./images/bg-mobile.svg);
+    background-size: contain;
+    background-position: top;
+    overflow: scroll;
+  }
+
+  header img{
+    margin-left: 30px;
+    width: 30%;
+  }
+  
+  .main-container{
+    display: grid;
+  }
+
+  .main-container div{
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .image-container,
+  .about-container{
+    flex: none;
+  }
+
+  .title{
+    width: 300px;
+    margin-top: 1em;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .text{
+    width: 300px;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    margin: 1.5em 0;
+    text-align: center;
+  }
+
+  .button-sign-up{
+    font-size: 14px;
+    width: auto;
+    height: auto;
+  }
+
+  .social-media{
+    float: none;
+    margin: 50px 10px;
+  }
+
+  .social-media i {
+    font-size: 12px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1500px){
+
+  .title,
+  .text{
+    width: 100%;
+  }
+
+  .title{
+    font-size: 2em;
+  }
+
+  .button-sign-up{
+    width: auto;
+    height: auto;
+  }
+
+  .social-media i{
+    font-size: 16px;
+  }
 }
