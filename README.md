@@ -11,6 +11,6 @@
 
 - [x]  <a href="https://github.com/pamlotusia/projetos_frontend/tree/master/grid-preco" target="_blank">Grid de Preços</a>
 - [x] <a href="https://github.com/pamlotusia/projetos_frontend/tree/master/grid-cruz" target="_blank">Seção com quatro cards de features</a>
-- [ ] Landing Page com área de introdução
+- [x] <a href="https://github.com/pamlotusia/projetos_frontend/tree/master/landingpage" target="_blank">Landing Page com área de introdução</a>
 - [ ] Tela de cadastro de Email
 - [ ] Tela de captura de Lead
