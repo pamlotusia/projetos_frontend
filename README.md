@@ -1,5 +1,5 @@
 <h2 align="center"> 
-	🚧  Atenção! Projetinhos a nível iniciante em contrução...  🚧
+	🚧  Atenção! Projetinhos a nível iniciante em construção...  🚧
 </h2>
 <h1 align="center">
     <p>Treino de telas</p>
