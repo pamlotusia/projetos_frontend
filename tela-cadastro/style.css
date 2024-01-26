@@ -82,6 +82,12 @@ button:hover{
   box-shadow: 1px 1px 10px #f8bfbf;
 }
 
+.message{
+  color: red;
+  font-size: 12px;
+  margin: 10px;
+  visibility: hidden;
+}
 /* responsividade para telas maiores */
 @media (min-width: 700px){
   body{
@@ -89,6 +95,7 @@ button:hover{
   }
 
   .logo{
+    width: 110px;
     margin: 5% 10% ;
   }
 
@@ -108,8 +115,6 @@ button:hover{
     position: absolute;
     top: 0;
   }
-
-
 
   .title, .lighter{
     font-size: 56px;
