@@ -8,8 +8,6 @@
 <p align="center" font-weight='bold'><b>⭐Todas as telas são responsivas para celular, computador e tablet⭐</b></p>
 <p align="center" font-weight='bold'><i>Os exercícios foram tirados do site <a href="https://devporai.com.br/5-projetos-frontend-para-melhorar-suas-habilidades/"> DevPorAi</i></p>
 
-<small>
-
 ### Telas
 
 - [x]  <a href="https://pamlotusia.github.io/grid-preco/" target="_blank">Grid de Preços</a>
