@@ -107,7 +107,18 @@ button{
 
 /* TABLET SCREEN */
 @media(min-width: 768px){
-  
+  .text{
+    text-align: left;
+  }
+
+  .title{
+    margin-left: 1.5em;
+    font-size: 32px;
+  }
+
+  section .lead{
+    justify-content: center;
+  }
 }
 /* DESKTOP SCREEN */
 @media(min-width: 1440px){
