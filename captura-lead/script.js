@@ -2,42 +2,49 @@
 // Para a validar o email é legal usar uma expressão regular.
 // Tente colocar todas as validações em uma função só, disparada a partir do click do botão.
 
+function validateEmail() {
+  const regexp = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+  return regexp.test(email)
+}
+
 function validateInfos(e) {
   e.preventDefault()
 
-  // tratando email primeiro
+  // Resetando mensagens de erro e estilo de contorno
+  document.querySelectorAll('.message').forEach(msg => msg.remove())
+  document.querySelectorAll('input').forEach(input => {
+    input.style.outline = '1px solid #b9b6d3'
+  })
+
+  // Validando email
   let email = document.querySelector('#email').value
   let divParent = document.querySelector('#email').parentElement
   let message = document.createElement('p')
   message.classList.add('message')
   let text
 
-  const regexp = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-  const test = regexp.test(email)
-  if (!test) {
+  const isEmailValid = validateEmail(email)
+  if (!isEmailValid) {
     text = 'Looks like this is not an email'
     message.innerText = text
     divParent.appendChild(message)
+    document.querySelector('#email').style.outline = '2px solid red'
   }
 
-  // tratando qualquer input que possa estar não preenchido
+  // Validando inputs vazios
   let inputs = document.querySelectorAll('input')
-
-  inputs.forEach((input)=>{
-    if(input.value == '' || input.value == null){
+  inputs.forEach(input => {
+    if (input.value.trim() === '' && input.id !== 'email') {
       divParent = input.parentElement
+      // criando nova instancia para cada input
+      let message = document.createElement('p')
+      message.classList.add('message')
       text = `${input.name} cannot be empty`
       message.innerText = text
       divParent.appendChild(message)
       input.style.outline = '2px solid red'
-      
-    } else {
-      input.style.outline = '1px solid hsl(246, 25%, 77%)'
     }
   })
-
 }
 
 document.querySelector('#confirm').addEventListener('click', validateInfos)
-
-let input = document.querySelectorAll('input')
