@@ -13,5 +13,5 @@
 - [x]  <a href="https://pamlotusia.github.io/grid-preco/" target="_blank">Grid de Preços</a>
 - [x] <a href="https://pamlotusia.github.io/section-four-cards.github.io/" target="_blank">Seção com quatro cards de features</a>
 - [x] <a href="https://pamlotusia.github.io/landingpage/" target="_blank">Landing Page com área de introdução</a> 
-- [ ] Tela de cadastro de Email
-- [ ] Tela de captura de Lead
+- [x] <a href="https://pamlotusia.github.io/tela-cadastro/" target="_blank">Tela de cadastro de Email</a>
+- [x] <a href="https://pamlotusia.github.io/captura-lead/" target="_blank">Tela de captura de Lead</a>
