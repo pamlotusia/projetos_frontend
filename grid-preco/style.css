@@ -13,7 +13,7 @@ body{
 
 .principal-container{
   background: #fdfdfd;
-  max-width: 40%;
+  margin: 0 2em;
   height: auto; /* trocar para auto pra testar o que acontece*/
   border-radius: 5px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
