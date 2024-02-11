@@ -27,14 +27,18 @@
     <section class="lead">
       <p class="try-on"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
       <form action="">
-        <input type="text" name="First Name" id="first-name" placeholder="First Name" required />
-        <small class="error-message"></small>
-        <input type="text" name="Last Name" id="last-name" placeholder="Last Name" required/>
-        <small class="error-message"></small>
-        <input type="email" name="Email Address" id="email" placeholder="Email Address"  required/>
-        <small class="error-message"></small>
-        <input type="password" name="Password" id="password" placeholder="Password" autocomplete="off" required/>
-        <small class="error-message"></small>
+        <div class="input">
+        <input type="text" name="First Name" id="first-name" placeholder="First Name"/>
+        </div>
+        <div class="input">
+        <input type="text" name="Last Name" id="last-name" placeholder="Last Name"/>       
+        </div>
+        <div class="input">
+          <input type="email" name="Email Address" id="email" placeholder="Email Address" />        
+        </div> 
+        <div class="input">
+          <input type="password" name="Password" id="password" placeholder="Password" autocomplete="off"/>        
+        </div>       
         <button id="confirm">Claim your free trial</button>
         <p class="subtitle">
           By clicking the button, you are agreeing to our
